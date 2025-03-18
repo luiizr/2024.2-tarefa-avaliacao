@@ -1,16 +1,19 @@
 # 2024.2 Avaliação do 1o período de Sistemas Operacionais
 
 ## Informações gerais
-- **Objetivo do repositório**: Avaliação do 1o bimestre da Disciplina de sistemas operacionais do curso de TADS do IFRN-CNAT
-- **Público alvo**: alunos da disciplina de SO (Sistemas Operacionais) do curso de TADS (Superior em Tecnologia em Análise e Desenvolvimento de Sistemas) no CNAT-IFRN (Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte - Campus Natal-Central).
-- disciplina: **SO** Sistemas Operacionais
-- professor: [Leonardo A. Minora](https://github.com/leonardo-minora)
+- **Objetivo do repositório**: Avaliação do 1o bimestre da Disciplina de Sistemas Operacionais do curso de TADS do IFRN-CNAT.
+- **Público-alvo**: Alunos da disciplina de SO (Sistemas Operacionais) do curso de TADS (Tecnologia em Análise e Desenvolvimento de Sistemas) no CNAT-IFRN (Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte - Campus Natal-Central).
+- Disciplina: **SO** Sistemas Operacionais
+- Professor: [Leonardo A. Minora](https://github.com/leonardo-minora)
+- Aluno: Luiz Roberto da Silva Gonzaga (20232014040027)
 
 ## Avaliação
-- **Lembre de fazer o fork deste repositório**
-- As questões foram construídas com o auxílio do [copilot](https://copilot.microsoft.com/)
+- **Lembre-se de fazer o fork deste repositório**
+- As questões foram construídas com o auxílio do [GitHub Copilot](https://copilot.github.com/)
 
-# Questão 1. Introdução a sistemas operacionais
+---
+
+# Questão 1. Introdução a Sistemas Operacionais
 
 Considere as funções e objetivos principais de um sistema operacional conforme discutido no texto. Explique como um sistema operacional gerencia os recursos de hardware e software de um computador para garantir eficiência e segurança. Em sua resposta, aborde os seguintes pontos:
 
@@ -23,7 +26,9 @@ Considere as funções e objetivos principais de um sistema operacional conforme
 
 **Copilot informa**: Essa questão incentiva os alunos a explorarem os conceitos fundamentais e a aplicarem o conhecimento teórico em situações práticas. Se precisar de mais alguma coisa, estou aqui para ajudar!
 
-# Questão 2. Estrutura de sistemas operacionais
+---
+
+# Questão 2. Estrutura de Sistemas Operacionais
 
 ## Texto informativo
 ### Estrutura de Sistemas Operacionais: Custo de Desenvolvimento e Segurança da Informação
@@ -33,7 +38,7 @@ A estrutura de um sistema operacional (SO) é fundamental para determinar tanto 
 #### Custo de Desenvolvimento e Manutenção
 
 1. **Arquitetura Monolítica**:
-   - **Desenvolvimento**: Geralmente, mais rápida de desenvolver inicialmente, pois todos os componentes do SO são integrados em um único bloco de código.
+   - **Desenvolvimento**: Geralmente mais rápida de desenvolver inicialmente, pois todos os componentes do SO são integrados em um único bloco de código.
    - **Manutenção**: Pode ser mais complexa e cara, pois qualquer alteração em um componente pode afetar todo o sistema, exigindo testes extensivos e cuidadosos.
 
 2. **Arquitetura Microkernel**:
@@ -70,6 +75,8 @@ Com base no texto sobre a estrutura de sistemas operacionais, analise como as di
 
 **Copilot informa**: Essa questão incentiva os alunos a considerarem tanto os aspectos econômicos quanto os de segurança ao avaliar diferentes arquiteturas de sistemas operacionais.
 
+---
+
 # Questão 3. Introdução à Segurança de Sistemas Operacionais
 
 ## Texto informativo
@@ -86,7 +93,6 @@ A segurança de um sistema operacional é um aspecto crucial que visa proteger o
 
 5. **Atualizações e Patches**: Manter o sistema operacional atualizado é essencial para corrigir vulnerabilidades conhecidas e proteger contra novas ameaças.
 
-
 ## Questão
 
 Considerando os mecanismos de segurança discutidos, analise como a implementação de controles de acesso e criptografia pode impactar a performance e a usabilidade de um sistema operacional. Em sua resposta, aborde os seguintes pontos:
@@ -98,6 +104,7 @@ Considerando os mecanismos de segurança discutidos, analise como a implementaç
 
 **Copilot informa**: Essa questão incentiva os alunos a refletirem sobre o equilíbrio entre segurança, performance e usabilidade, aplicando conceitos teóricos a contextos práticos.
 
+---
 
 # Questão 4. Custo de Processamento versus Algoritmo Ótimo de Escalonamento
 
@@ -129,7 +136,9 @@ Considerando os conceitos de custo de processamento e algoritmo ótimo de escalo
 
 **Copilot informa**: Essa questão incentiva os alunos a refletirem sobre a complexidade e os trade-offs envolvidos na escolha de um algoritmo de escalonamento, aplicando conceitos teóricos a contextos práticos.
 
-# Questão 5. Aplicativo em python vs aplicativos em c
+---
+
+# Questão 5. Aplicativo em Python vs Aplicativo em C
 
 ## Questão
 
@@ -143,82 +152,95 @@ Explique o caminho que as instruções seguem desde um aplicativo escrito em Pyt
 
 **Copilot informa**: Essa questão incentiva os alunos a refletirem sobre os diferentes caminhos que as instruções seguem em linguagens interpretadas e compiladas, aplicando conceitos teóricos a contextos práticos.
 
+---
 
+## RESPOSTAS DAS QUESTÕES ABAIXO:
 
+## Questão 1: Gerenciamento de recursos por um SO
 
+O sistema operacional (SO) é responsável por gerenciar os recursos de hardware e software, garantindo **eficiência** e **segurança**. Vamos analisar suas principais funções:
 
-## RESPOSTAS:
+### **Gerenciamento de Processos**
+- **Função**: Controla a criação, execução e finalização de processos. Coordena a CPU para que múltiplos processos sejam executados sem conflitos.
+- **Exemplo Prático**: No Windows, o Gerenciador de Tarefas permite ao usuário monitorar e encerrar processos em execução, alocando recursos adequadamente.
 
+### **Gerenciamento de Memória**
+- **Função**: Garante que cada processo tenha acesso à memória necessária sem interferir em outros processos. Realiza a alocação dinâmica e o uso de memória virtual.
+- **Exemplo Prático**: Em sistemas Linux, a memória swap é usada quando a RAM está cheia, permitindo a execução de programas mesmo em condições de pouca memória.
 
-### Questão 1: Introdução a Sistemas Operacionais
+### **Gerenciamento de Dispositivos de Entrada e Saída**
+- **Função**: Coordena a comunicação entre hardware (teclados, impressoras, etc.) e software, garantindo que dispositivos diferentes possam ser usados simultaneamente.
+- **Exemplo Prático**: O Windows fornece drivers para que dispositivos como impressoras sejam reconhecidos e utilizados sem intervenção manual.
 
-Um sistema operacional (SO) é como o "cérebro" do computador, que organiza tudo para que os programas funcionem bem e para que o hardware e o software trabalhem juntos. Ele tem quatro funções principais que garantem que o sistema seja eficiente e seguro:
-
-1. **Gerenciamento de Processos:**
-   - O SO é responsável por coordenar os processos, que são basicamente os programas em execução. Ele decide qual processo vai rodar, por quanto tempo e quando trocar para outro. Isso é essencial em sistemas multitarefa, onde o usuário pode assistir a um vídeo, editar um documento e navegar na internet ao mesmo tempo. O SO garante que todos esses processos recebam uma parte do processador sem travar o sistema.
-
-2. **Gerenciamento de Memória:**
-   - O SO precisa garantir que a memória RAM seja usada da melhor maneira possível. Ele separa uma parte da memória para cada programa em execução, criando um ambiente onde os programas não interferem uns nos outros. Além disso, ele cria a memória virtual, que utiliza parte do disco rígido como se fosse RAM, permitindo rodar mais programas do que a memória real suportaria.
-
-3. **Gerenciamento de Dispositivos de Entrada e Saída:**
-   - Todo dispositivo conectado ao computador é gerenciado pelo SO. Isso inclui teclados, mouses, impressoras, pen drives, entre outros. Ele usa os drivers para traduzir os comandos do sistema para algo que o dispositivo entenda. Por exemplo, quando você clica para imprimir um documento, o SO envia as instruções para a impressora de forma que ela saiba exatamente o que fazer. Esse gerenciamento também permite que vários dispositivos funcionem ao mesmo tempo sem conflitos.
-
-4. **Gerenciamento de Arquivos:**
-   - O SO organiza como os arquivos são armazenados e acessados no sistema. Ele cria estruturas de diretórios e oferece comandos para criar, copiar, mover ou apagar arquivos. Além disso, ele cuida da segurança, garantindo que somente usuários autorizados possam acessar determinados arquivos. 
-
-Com essas quatro funções, o SO garante que você possa usar o computador sem se preocupar com os detalhes técnicos do hardware.
+### **Gerenciamento de Arquivos**
+- **Função**: Organiza, armazena e protege dados no sistema de arquivos, além de fornecer acesso controlado a eles.
+- **Exemplo Prático**: O macOS utiliza o sistema de arquivos APFS para operações rápidas e confiáveis, com suporte a criptografia nativa.
 
 ---
 
-### Questão 2: Estrutura de Sistemas Operacionais
+## Questão 2: Arquitetura de SOs
 
-Os sistemas operacionais podem ser organizados de formas diferentes, dependendo de como seus componentes interagem, podemos citar como exemplo:
+### **Impactos das Arquiteturas de Sistemas Operacionais**
 
-1. **Monolítica:**
-   - Nesse tipo de arquitetura, todo o código do SO funciona como um bloco único. Isso significa que todas as funções, como gerenciamento de arquivos, memória e dispositivos, estão integradas. A grande vantagem é que o sistema é muito rápido, pois não há separação entre os módulos. Por outro lado, se uma parte do sistema falhar, todo o SO pode travar. Um exemplo clássico é o Linux, que utiliza um núcleo monolítico.
+#### **Arquitetura Monolítica**
+- **Complexidade**: Fácil de implementar inicialmente, pois todos os componentes estão integrados.
+- **Manutenção**: Difícil e cara, devido à necessidade de testes extensivos ao alterar qualquer componente.
+- **Necessidade de Especialização**: Menor, já que os desenvolvedores precisam compreender um único bloco de código.
+- **Segurança**: Vulnerável, pois uma falha em um componente pode comprometer todo o sistema.
+- **Exemplo**: O Linux utiliza uma arquitetura monolítica.
 
-2. **Microkernel:**
-   - Aqui, apenas as funções básicas, como comunicação entre processos e acesso ao hardware, ficam no núcleo. Todo o resto é separado em serviços que rodam fora do núcleo. Isso torna o sistema mais seguro e fácil de atualizar, pois uma falha em um serviço não afeta o núcleo. Por outro lado, ele pode ser mais lento devido à comunicação entre os serviços. Exemplos incluem o Minix e o QNX.
+#### **Arquitetura Microkernel**
+- **Complexidade**: Alta durante a implementação inicial, já que os serviços precisam ser projetados de forma isolada.
+- **Manutenção**: Mais fácil, pois os módulos são independentes e podem ser atualizados sem afetar o núcleo.
+- **Necessidade de Especialização**: Maior, pois cada módulo exige um nível específico de conhecimento.
+- **Segurança**: Elevada, devido ao isolamento de serviços.
+- **Exemplo**: O Minix utiliza a arquitetura microkernel.
 
-3. **Em Camadas:**
-   - Nesse modelo, o SO é dividido em "andares", onde cada camada cuida de uma tarefa específica. A camada mais baixa controla o hardware, enquanto as camadas superiores gerenciam dispositivos, memória e processos. Isso facilita a manutenção, mas pode tornar o sistema mais lento devido à necessidade de atravessar várias camadas para realizar uma tarefa. Um exemplo de sistema em camadas é o Windows NT.
-
-Essas arquiteturas mostram como os sistemas operacionais podem ser projetados para balancear desempenho, segurança e facilidade de manutenção.
-
----
-
-### Questão 3: Segurança de Sistemas Operacionais
-
-Dois dos principais mecanismos usados para proteger os dados e recursos são o controle de acesso e a criptografia.
-
-1. **Controle de Acesso:**
-   - Esse mecanismo define quem pode acessar o quê no sistema. Isso é feito através de autenticação (como senhas ou biometria) e permissões (como leitura, escrita e execução de arquivos). Por exemplo, em um computador compartilhado, cada usuário tem sua própria conta e só pode acessar seus próprios arquivos. O desafio do controle de acesso está em balancear segurança e praticidade. Senhas longas e autenticações frequentes podem ser seguras, mas também podem irritar o usuário.
-
-2. **Criptografia:**
-   - A criptografia protege os dados "embaralhando" as informações para que apenas pessoas autorizadas possam entendê-las. Isso é muito importante em transações bancárias e comunicações pela internet. Um exemplo comum é o uso de HTTPS em sites, que garante que as informações transmitidas entre você e o site estejam protegidas. O problema é que a criptografia pode consumir mais recursos do sistema, tornando-o um pouco mais lento.
+#### **Arquitetura em Camadas**
+- **Complexidade**: Moderada, exige boa definição de interfaces entre camadas.
+- **Manutenção**: Simplificada, já que as falhas podem ser corrigidas em camadas específicas.
+- **Necessidade de Especialização**: Equilibrada, pois cada camada pode ser tratada de forma independente.
+- **Segurança**: Balanceada, desde que a comunicação entre camadas seja segura.
+- **Exemplo**: O Windows NT usa uma abordagem em camadas.
 
 ---
 
-### Questão 4: Algoritmos de Escalonamento
+## Questão 3: Introdução à Segurança de Sistemas Operacionais
 
-Escalonamento é como o sistema operacional decide qual programa vai usar o processador e por quanto tempo.
+### **Impacto de Controles de Acesso e Criptografia**
 
-1. **FCFS (First-Come, First-Served):**
-   - Este é o método mais simples: quem chega primeiro é atendido primeiro. Funciona bem para tarefas longas e simples, mas pode causar tempos de espera altos para tarefas curtas, porque uma tarefa longa pode "segurar" o processador por muito tempo.
+#### **Controles de Acesso**
+- **Benefícios**: Garante que apenas usuários autorizados acessem recursos, protegendo o sistema contra acessos não autorizados.
+- **Desafios**: Implementações complexas podem dificultar a usabilidade, como exigir autenticação multifator frequente.
+- **Impacto na Experiência do Usuário**: Pode ser percebido como inconveniente, mas é essencial para evitar violações de segurança.
+- **Exemplo**: O Windows utiliza políticas de grupo (Group Policies) para definir permissões em redes corporativas.
 
-2. **Round Robin (RR):**
-   - Neste método, cada processo recebe um "pedaço" de tempo para rodar. Se não terminar, ele vai para o final da fila e espera a sua vez novamente. Isso é justo e funciona bem em sistemas interativos, mas o SO precisa gastar tempo alternando entre os processos, o que pode gerar alguma lentidão.
+#### **Criptografia**
+- **Benefícios**: Protege dados em trânsito (TLS) e em repouso (BitLocker, no Windows), garantindo confidencialidade.
+- **Desafios**: Requer processamento adicional, podendo impactar a performance do sistema.
+- **Impacto na Experiência do Usuário**: O impacto é minimizado por hardware moderno, mas pode ser perceptível em sistemas mais antigos.
+- **Exemplo**: O macOS usa o FileVault para criptografar o disco do usuário, protegendo dados contra acessos indevidos.
 
-Esses algoritmos são escolhidos dependendo do tipo de sistema. Por exemplo, o FCFS é comum em sistemas de lote, enquanto o RR é mais usado em sistemas interativos.
+### **Aplicações Críticas**
+- **Controles de Acesso**: Em servidores de banco de dados, como MySQL, onde múltiplos usuários acessam informações sensíveis.
+- **Criptografia**: Em serviços de armazenamento na nuvem, como o Google Drive, para garantir a privacidade dos arquivos dos usuários.
 
 ---
 
-### Questão 5: Aplicativo Python vs. C
+## Questão 4: Análise de algoritmos de escalonamento
 
-1. **Python:**
-   - Em Python, o código é interpretado. Isso significa que cada linha do programa é lida e traduzida em tempo real pelo interpretador. Isso torna o desenvolvimento mais rápido e simples, mas também faz o programa rodar mais devagar, porque a tradução acontece enquanto ele está sendo executado.
+O escalonamento de processos é uma função central nos sistemas operacionais, com diferentes algoritmos aplicados de acordo com o cenário e os requisitos de performance. Aqui, analisaremos **Shortest Job Next (SJN)** e **Priority Scheduling**.
 
-2. **C:**
-   - Em C, o código é compilado antes de ser executado. Isso significa que o programa é traduzido de uma vez para linguagem de máquina, criando um arquivo binário que pode rodar direto no hardware. Esse processo torna o programa muito mais rápido, mas também exige mais cuidado no desenvolvimento.
+### 1. Shortest Job Next (SJN)
 
-Independente da linguagem, o sistema operacional faz a ponte entre o programa e o hardware, usando o kernel e os drivers para traduzir as instruções do programa em comandos que o processador e outros dispositivos possam entender. Python é ideal para tarefas simples e rápidas, enquanto C é mais adequado para aplicações que precisam de alta performance.
+#### Descrição
+- O SJN é um algoritmo não preemptivo que escolhe para execução o processo com o menor tempo estimado de execução.
+- Baseado na premissa de minimizar o tempo médio de espera dos processos na fila de prontos.
+
+#### Vantagens
+- Minimiza o tempo médio de espera dos processos, pois os processos curtos são executados rapidamente.
+- Reduz o número de processos na fila, promovendo eficiência.
+
+#### Desvantagens
+- Requer conhecimento prévio ou estimativa precisa do tempo de execução dos processos, o que nem sempre é viável.
+- Pode levar à
