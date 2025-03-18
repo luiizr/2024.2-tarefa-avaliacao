@@ -243,4 +243,77 @@ O escalonamento de processos é uma função central nos sistemas operacionais, 
 
 #### Desvantagens
 - Requer conhecimento prévio ou estimativa precisa do tempo de execução dos processos, o que nem sempre é viável.
-- Pode levar à
+- Pode levar à inanição de processos mais longos, que permanecem indefinidamente na fila se houver um fluxo contínuo de processos curtos.
+
+#### Impacto do custo de processamento
+- O custo de processamento no SJN está relacionado à necessidade de prever ou calcular o tempo de execução dos processos. Essa tarefa adiciona sobrecarga computacional, especialmente em sistemas com alta variabilidade de processos.
+
+#### Exemplo de aplicação
+- É adequado para sistemas em que os tempos de execução dos processos são conhecidos e previsíveis, como sistemas batch.
+- **Exemplo**: processamento de jobs em servidores de impressão, onde processos curtos devem ser finalizados rapidamente para evitar congestionamento.
+
+### 2. Priority Scheduling
+
+#### Descrição
+- Esse algoritmo atribui prioridades aos processos, onde processos com maior prioridade são executados primeiro. Ele pode ser **preemptivo** ou **não preemptivo**.
+
+#### Vantagens
+- Flexível e adequado para sistemas de tempo real, onde processos críticos podem receber prioridade mais alta.
+- Permite a customização do escalonamento com base em políticas específicas
+
+---
+
+## Questão 5: Caminho das instruções em Python e C
+
+Aqui está uma análise:
+
+### 1. Python: Linguagem Interpretada
+
+#### Papel do interpretador
+- Um programa Python é lido e executado pelo interpretador Python (por exemplo, CPython).
+- O código-fonte é convertido em **bytecode**, uma representação intermediária de baixo nível, que é executada pela Máquina Virtual Python (PVM).
+- Não há etapa explícita de compilação para código binário; o bytecode é interpretado dinamicamente, o que permite alta portabilidade, mas com impacto na performance.
+
+#### Interação com o kernel e drivers
+- Durante a execução, operações como abertura de arquivos, alocação de memória e interações de entrada/saída são feitas através de chamadas de sistema fornecidas pelo kernel do sistema operacional.
+- O interpretador Python faz essas solicitações ao kernel, que coordena os drivers para interagir com o hardware correspondente.
+
+#### Tradução final para binário
+- O kernel transforma as solicitações de alto nível em instruções binárias executáveis pela CPU, que acessam diretamente os dispositivos por meio dos drivers.
+
+#### Características do caminho em Python
+- **Vantagem**: Flexibilidade e portabilidade.
+- **Desvantagem**: A tradução em tempo de execução adiciona sobrecarga, tornando a execução mais lenta em comparação a linguagens compiladas.
+
+### 2. C: Linguagem Compilada
+
+#### Processo de compilação
+- O código-fonte em C é transformado em código binário executável (formato de máquina) pelo compilador (por exemplo, GCC ou Clang).
+- Esse processo envolve etapas de pré-processamento, compilação, montagem e ligação (linking).
+- O resultado é um arquivo executável otimizado, diretamente interpretável pelo hardware.
+
+#### Interação com o kernel e drivers
+- Assim como no Python, o executável faz chamadas de sistema para interagir com o kernel, que gerencia os recursos de hardware.
+- No entanto, o código em C, por ser diretamente compilado, interage com o sistema operacional de maneira mais eficiente.
+
+#### Tradução final para binário
+- As instruções já estão em formato binário antes da execução, eliminando a necessidade de interpretação em tempo de execução. A CPU executa diretamente essas instruções.
+
+#### Características do caminho em C
+- **Vantagem**: Performance elevada, pois elimina a necessidade de interpretação.
+- **Desvantagem**: Menos portabilidade; um binário compilado é específico para o hardware e o sistema operacional.
+
+### Comparação entre Python e C
+
+| **Aspecto**               | **Python**                                         | **C**                                              |
+|---------------------------|---------------------------------------------------|---------------------------------------------------|
+| **Execução**              | Interpretada em tempo de execução.                | Pré-compilada para código binário executável.     |
+| **Velocidade**            | Mais lenta devido à interpretação.                | Mais rápida, pois as instruções já estão otimizadas. |
+| **Portabilidade**         | Alta, requer apenas um interpretador compatível.  | Depende do binário ser recompilado para a plataforma-alvo. |
+| **Complexidade do Processo** | Simples para o desenvolvedor.                   | Mais complexo, com etapas explícitas de compilação e linkagem. |
+
+### Exemplo Prático
+- **Python**: Um script que lê e manipula dados em um arquivo interage com o kernel para abrir o arquivo e realizar operações de leitura e escrita. O interpretador gerencia essas operações.
+- **C**: Um programa similar em C realiza essas operações diretamente através de funções como `fopen` e `fwrite`, cuja execução é otimizada durante a compilação.
+
+---
